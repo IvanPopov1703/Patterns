@@ -1,0 +1,24 @@
+package creation_patterns.factory_method;
+
+public class EuropeanPizza implements Pizza {
+
+    @Override
+    public void preparing() {
+        System.out.println("Приготовление европейской пиццы");
+    }
+
+    @Override
+    public void backing() {
+        System.out.println("Выпечка европейской пиццы");
+    }
+
+    @Override
+    public void cutting() {
+        System.out.println("Нарезка европейской пиццы");
+    }
+
+    @Override
+    public void packaging() {
+        System.out.println("Упаковка европейской пиццы");
+    }
+}
