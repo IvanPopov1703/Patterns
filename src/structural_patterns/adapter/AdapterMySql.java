@@ -2,7 +2,7 @@ package structural_patterns.adapter;
 
 public class AdapterMySql implements Oracle {
 
-    private MySql mySql;
+    private final MySql mySql;
 
     public AdapterMySql(MySql mySql) {
         this.mySql = mySql;

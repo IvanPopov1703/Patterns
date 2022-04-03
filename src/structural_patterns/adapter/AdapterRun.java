@@ -6,15 +6,15 @@ public class AdapterRun {
         Oracle oracle = new OracleDB("oracle");
         MySql mySql = new MySqlDB("mySql");
 
-        System.out.println("Работа с oracle");
-        oracle.connect();
-        oracle.isConnect();
-        oracle.disconnect();
-
         System.out.println("\nРабота с mySql");
         mySql.connectDB();
         mySql.isConnect();
         mySql.disconnectDB();
+
+        System.out.println();
+
+        System.out.println("Работа с oracle");
+        testAdapter(oracle);
 
         System.out.println("\nРабота с адаптером");
         Oracle mySqlAdapter = new AdapterMySql(mySql);
